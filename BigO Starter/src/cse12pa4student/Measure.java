@@ -23,11 +23,11 @@ public class Measure {
 				long endTime = System.nanoTime();
 				Measurement m = new Measurement(toRun[i], j, endTime - startTime);
 				result.add(m);
-				System.out.println("Execution Time: " + (endTime - startTime) + " nanoseconds" + " " + toRun[i]);
-				count++;
+				//System.out.println("Execution Time: " + (endTime - startTime) + " nanoseconds" + " " + toRun[i]);
+				//count++;
 			}
 		}
-		System.out.println(count);
+	//	System.out.println(count);
 		return result;
 	}
 	
@@ -67,7 +67,9 @@ public class Measure {
 		for(int i = 0; i < toConvert.size(); i++) {
 			result += toConvert.get(i).toString();
 			System.out.println();
+		
 		}
+		System.out.println(result);
 		return result;
 	}
 	
