@@ -60,12 +60,12 @@ public class Measure {
 
 	public static String measurementsToCSV(List<Measurement> toConvert) {
 		/** TODO **/
-		String result = "";
+		String result = "name,n,nanoseconds" + "\n";
 		if(toConvert == null) {
 			return null;
 		} else
 		for(int i = 0; i < toConvert.size(); i++) {
-			result += toConvert.get(i).toString();
+			result += toConvert.get(i).getName() + "," + toConvert.get(i).getN() + "," + toConvert.get(i).getTime() + "\n";
 			System.out.println();
 		
 		}

@@ -21,4 +21,16 @@ public class Measurement {
 	public String toString() {
 		return "\nMeasuring:\t" + name + "\nInput value:\t" + valueOfN + "\nTime taken:\t" + nanosecondsToRun + "ns\n";
 	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public int getN() {
+		return this.valueOfN;
+	}
+	
+	public long getTime() {
+		return this.nanosecondsToRun;
+	}
 }
